@@ -1,0 +1,72 @@
+GET  http://localhost:3000/api/contacts
+###
+POST http://localhost:3000/api/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Nguyen Thi My Khanh",
+    "email": "khanhb1910657@student.ctu.edu.vn",
+    "address": "An Giang",
+    "phone": "0976038762"
+}
+###
+POST http://localhost:3000/api/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Nguyen Hieu Nghia",
+    "email": "nghia@student.ctu.edu.vn",
+    "address": "Vinh Long",
+    "phone": "0123456789"
+}
+
+###
+POST http://localhost:3000/api/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Ho Xuan Phuong Dong",
+    "email": "dong@student.ctu.edu.vn",
+    "address": "Vinh Long",
+    "phone": "0123456788"
+}
+
+###
+POST http://localhost:3000/api/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Dang Quoc Cuong",
+    "email": "cuong@student.ctu.edu.vn",
+    "address": "Hau Giang",
+    "phone": "0123456787"
+}
+###
+GET http://localhost:3000/api/contacts
+
+###
+GET http://localhost:3000/api/contacts?name=Khanh
+
+###
+GET http://localhost:3000/api/contacts/1
+
+###
+PUT http://localhost:3000/api/contacts/1
+content-type: application/json
+
+{
+    "name": "Nguyen Thi My Khanh",
+    "email": "khanhb1910657@student.ctu.edu.vn",
+    "address": "An Giang",
+    "phone": "0976038766",
+    "favorite": 1
+}
+
+###
+DELETE http://localhost:3000/api/contacts/2
+
+###
+GET http://localhost:3000/api/contacts/favorite
+
+###
+DELETE http://localhost:3000/api/contacts
